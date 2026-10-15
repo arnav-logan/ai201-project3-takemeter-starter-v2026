@@ -41,7 +41,7 @@
 
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
-
+TakeMeter uses a fine tuned LLM to classify posts from a specific online community. In this case, the system classifies posts from the subreddit r/buildapc, a community centered on questions, advice, and discussion about building a PC. Posts will be sorted into categories such as build help, discussion, and troubleshooting.
 
 
 ---
