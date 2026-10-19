@@ -51,62 +51,62 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. Labeling must be correct at least 80% of the time 
 
 <!-- Your criterion. It must name a number. -->
 
 
 
 **Why this target:**
-
+Since there are three labels, a random guess would be right about 33% of the time. The system should have a much higher accuracy of 80% to actually be useful the majority of the time. 
 
 
 ---
 
-## 2.
+## 2. Each label's accuracy should not have a difference greater than 20% with other labels' accuracies
 
 <!-- Your criterion. -->
 
 
 
 **Why this target:**
-
+If one label's accuracy is significantly worse than the others, the system automatically becomes less useful because there are only 3 labels. Ideally, all lables perform equally as good or bad so any adjustments can try to uniformly improve accuracies.
 
 
 ---
 
-## 3.
+## 3. No label should comprise more than 60% of the training or testing data 
 
 <!-- Your criterion. -->
 
 
 
 **Why this target:**
-
+The system will simply learn to always guess a certain label if it appears too often. So, label percentages should try to be somewhat even. Still, the amount of real posts of each label is not equal so some imbalance is expected.
 
 
 ---
 
-## 4.
+## 4. If posts are re-labeled by someone else or AI, labels should agree 90% of the time
 
 <!-- Your criterion. -->
 
 
 
 **Why this target:**
-
+The labels should not be ambiguous most of the time so the consistency will likely be good. However, there can often be posts that follow the criteria of multiple labels so some labeling may differ.
 
 
 ---
 
-## 5.
+## 5. For posts that are on the boundary of two different labels, the tiebreaker should follow the decision rule 90% of the time.
 
 <!-- Your criterion. -->
 
 
 
 **Why this target:**
-
+For posts that are close, the system needs to follow the decision rule exclusively. However, there may be a few times where the rule can't be applied (such as if a post only follows part of a rule requirement) so the system will have to decide another way in those times.
 
 
 ---
