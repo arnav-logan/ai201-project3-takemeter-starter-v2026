@@ -54,33 +54,61 @@ TakeMeter uses a fine tuned LLM to classify posts from a specific online communi
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `build help`
 
-**Definition:**
-
-**Example 1:**
->
-
-**Example 2:**
->
-
-### `label_two`
-
-**Definition:**
+**Definition: Lists some or all parts of a build and asks for guidance or confirmation.**
 
 **Example 1:**
->
+> What deal would be better for my build? 
+>  So I am trying to figure out what deal would be better value for me, my max budget is 2k USD.I am in between getting either an Intel or AMD bundle.
+> I have little to no knowledge on pc building so any recommendations would be appreciated.
+
+>Intel bundle:$629.99
+>G. Skill Rip jaws(2x16)32GB ddr5 ram
+>Intel core ultra 7 270k
+>Gigabyte z890 Eagle WiFi7 Plus motherboard
+
+>AMD bundle: $779.99
+>G. Skill Flare (2x16)32GB ddr5 ram
+>AMD Ryzen 7 7800X3D
+>Gigabyte X870 Gaming Wifi6 Am5 motherboard 
 
 **Example 2:**
->
+> What should I do next without the CPU Cooler? 
+> I want to know exactly what to do next since I don't have my CPU Cooler yet. I have the RAM installed, SSD installed, and CPU installed. I'm a first-time builder and I'm trying to get this PC finished ASAP. 
+
+### `discussion`
+
+**Definition: Asks a general/open-ended question or a question not about an entire build.**
+
+**Example 1:**
+> Is DDR4 still good for a long-term budget gaming build? 
+> Hi guys, I'm thinking of buying a budget PC that can last me about 5 years before I need to upgrade again. Is DDR4 still good for gaming modern AAA titles and other heavy games, or should I stretch my budget for DDR5? Thanks
+
+**Example 2:**
+> Is this the worst time to buy a gaming PC? 
+>  For about a month now, I want to buy a gaming PC on Black Friday if there are good deals at Micro Center But I see many of the PC community saying not to expect good sales because they will only continue and continue to rise Want I want is a PC with RX 9060 XT and 16gb ram, $1,500 aprox at Micro Center Should I last longer with my PS5 and Steam Deck? 
+
+## `troubleshooting`
+
+**Definition: Names a specific problem and asks for solutions or explanations**
+
+**Example 1:**
+> PC is constantly tripping outlets in my dorm room and I don't know what to do. 
+>To give a little more context. I have had this PC for about 3 years and never had any issues with it. As soon as I move into my dorm for college, my PC starts tripping the circuits in my room. It sometimes trips when my computer starts up, but there has also been times where it last for more than a week before tripping. It has tripped about 5 times now on different outlets/circuits and the electricians here believe my PC is causing the issues. I am not sure what to do at this point because I want to use my PC at school, but I can't keep tripping the breaker. If anyone has any suggestions I would appreciate it. 
+
+**Example 2:**
+> Having troubles with UX200 SE cooler and B650 motherboard
+> I’m having some issues with this heat sync. Unfortunately, I didn’t look anything up besides if this was a good heat sync for its price. I’m just not seeing where to place the bracket. Any help will be appreciated. 
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels: `troubelshooting` and `build help`**
 
 **The decision rule I used every time:**
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
+     If the post names a specific problem after the pc is built (or while it's being built), then it's troubleshooting because there is a real problem after buying the parts or building the pc.  
 
 
 
