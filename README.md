@@ -120,17 +120,18 @@ TakeMeter uses a fine tuned LLM to classify posts from a specific online communi
      cases. -->
 
 **Where the posts came from:**
+r/buildapc (Reddit)
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:**
+I labeled a few posts from each section then I let AI label the rest.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| `Build Help` | 71 | 35.5% |
+| `Discussion` | 66 | 33% |
+| `Troubleshooting` | 63 | 31.5% |
 | **Total** |  | 100% |
 
 **Three hard cases**
@@ -140,24 +141,53 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 **1.**
 > *The post:*
->
+> "6700 xt or a 9060 xt 8gb
+
+>I just bought a new AMD Radeon RX 9060 XT 8GB from Newegg for a good price, but it isn’t installed yet. I’m currently running PCIe 3.0 and won’t be upgrading for another 10 months or so. My CPU is a Ryzen 5 5500, and my motherboard is a B450.  
+>The dilemma is that there’s a guy near me selling a used RX 6700 XT 12GB for a good price. I know the RX 9060 XT 8GB has a full x16 interface, but I’m worried about the 8GB VRAM buffer >overflowing on PCIe 3.0.  
+>My question is: In demanding 1080p games like Cyberpunk 2077 and Bodycam, is it worth returning the RX 9060 XT 8GB and buying the used RX 6700 XT for the 12GB VRAM safety net? Or would the raw >performance of the RX 9060 XT make that trade-off not worth it?"
+
 > *Could have been:*
->
-> *I chose, because:*
+> `Troubleshooting`
+
+> *I chose `Build Help`, because: Although the post mentions a problem, the post mainly asks for advice if it is worth returning the RX 9060 XT 8GB to get a RX 6700 XT for more VRAM*
 
 **2.**
 > *The post:*
->
+>"CPU pairing for GTX 285 (possibly SLI)
+
+>Curious what would you pick.
+>GTX 285 came out in Jan 2009 as a die shrink of the GTX 280 from Jun 2008, the last DX 10 only generation from Nvidia.
+>I'm planning to build a reverse sleeper retro machine around it as I was in university during that era and was way too poor to afford a gaming PC back then.
+>Can't decided between sticking with a Core 2 Duo E8600 (which feels a bit more period correct for Win XP), a late Core 2 Quad or a first gen i5/i7.
+>I already have a board for socket 775, but it sadly came without an I/O shield.
+>Case will most likely be Fractal Pop Air."
+
 > *Could have been:*
->
-> *I chose, because:*
+> `Discussion`
+
+> *I chose, `Build Help` because: Although the post asks about the reader's thoughts on the matter, it asks for advice on a specifion CPU choice (not a general case)*
 
 **3.**
 > *The post:*
->
+> "please help me  choose a GPU i cant decide.
+
+>**RX 9060 XT 8GB vs RTX 5060 8GB which is better value for gaming?**
+>I'm building a budget gaming PC and trying to get the best performance for my money.
+>**My planned specs:**
+>CPU: AMD Ryzen 5 5600G
+>Motherboard: MSI B550M-A PRO
+>RAM: 16GB DDR4 3200MHz
+>**GPU options:**
+>Sapphire Radeon RX 9060 XT PULSE 8GB OC
+>NVIDIA GeForce RTX 5060 8GB
+>I mainly want to play Helldivers 2 at 1080p
+>Which GPU would you recommend for gaming performance and value? Is there a reason to choose the RTX 5060 over the RX 9060 XT? I'd also appreciate any compatibility advice or alternative recommendations.",Discussion,
+
 > *Could have been:*
->
-> *I chose, because:*
+> `Discussion`
+
+> *I chose, `Build Help` because: The post shows a plan of what parts to buy and asks for a GPU choice*
 
 ---
 
