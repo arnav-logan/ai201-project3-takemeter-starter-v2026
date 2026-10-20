@@ -5,6 +5,6 @@
 #
 # Delete the examples below and put yours in.
 
-analysis: makes an argument backed by a specific, checkable fact
-hot_take: a confident claim with no support offered
-reaction: an immediate response to something that just happened
+Build Help: Lists some or all parts of a build and asks for guidance or confirmation.
+Discussion: Asks a general/open-ended question or a question not about an entire build.
+Troubleshooting: Names a specific problem and asks for solutions or explanations.

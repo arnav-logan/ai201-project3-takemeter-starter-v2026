@@ -91,7 +91,7 @@ TakeMeter uses a fine tuned LLM to classify posts from a specific online communi
 
 ## `troubleshooting`
 
-**Definition: Names a specific problem and asks for solutions or explanations**
+**Definition: Names a specific problem and asks for solutions or explanations.**
 
 **Example 1:**
 > PC is constantly tripping outlets in my dorm room and I don't know what to do. 
@@ -196,15 +196,25 @@ I labeled a few posts from each section then I let AI label the rest.
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
 **Base model:**
+distilbert-base-uncased
 
 **Settings:** <!-- epochs, learning rate, batch size, seed -->
+EPOCHS = 3, LEARNING_RATE = 2e-5, BATCH_SIZE = 16, Seed = 42
 
 **Anything I changed from the defaults, and why:**
+Nothing was changed
 
 **Split sizes:** <!-- train / val / test, and per-label counts in the test
 split. If a label had fewer than about 8 in test, say so — it explains a lot
 of next unit's variance. -->
 
+train 139  ·  val 31  ·  test 30
+
+| Label | Train | Val | Test |
+| ---- | ---- | ---- | ---- |            
+| Build Help | 49 | 11 | 11 |
+| Discussion | 46 | 10 | 10 |
+| Troubleshooting | 44 | 10 | 9 |
 
 
 ---
@@ -220,17 +230,18 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I provided Claude with label definitions and gathered data and asked it to label the unlabeled entries. 
+- *What came back:* Claude labeled the entries and returned the text.
+- *What I changed:* I put the labeled data in labels.csv.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I aksked Claude if my criteria were objective and based on numbers.
+- *What came back:* Claude said that the criteria looked good and I didn't need to change anything.
+- *What I changed:* Nothing.
 
 **Pre-labelling disclosure:**
+Yes, I used AI to prelabel and I corrected any incorrect labels.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
