@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.5,
+    "f1_macro": 0.404723564143854,
+    "per_label": {
+      "Build Help": {
+        "precision": 0.4375,
+        "recall": 0.6363636363636364,
+        "f1": 0.5185185185185185,
+        "support": 11
+      },
+      "Discussion": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "Troubleshooting": {
+        "precision": 0.5714285714285714,
+        "recall": 0.8888888888888888,
+        "f1": 0.6956521739130435,
+        "support": 9
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Looking for a graphics card that could fit my PC.\r\n\r\nSo im an argentinian guy who edits videos, does a lot of gaming and is in college, and ive had this pc for a couple of years now (8gb ram, intel core i3 9th gen, internal graphics card, dunno what else would be needed for specifics) and ive been wanting to upgrade to a fully dedicated graphics card for a while, but idk what would be good for my pc since i know that a graphics card that is too powerful could destroy my pc, so i came here asking for what would be a good fit since i legit have no clue in these things.\r\n\r\nBudget is around 100 dollars",
+      "gold": "Build Help",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "I need help solving my bizzard pc issue\r\n\r\nHey everyone, I need some serious help figuring out a bizarre PC problem that started after a sudden power cut. I\u2019m running a Ryzen 9 5900X on a Gigabyte B550 Gaming X V2 motherboard, and my main RAM kit is a matching pair of 32GB Kingston Fury 3200MHz.\r\n\r\nEver since the power cut, my PC completely refuses to work right with my matching Kingston RAM kit. If I turn XMP on to get my 3200MHz speed, the PC won't even post, or it throws a corrupted fTPM screen saying a new CPU was installed. If I leave XMP off, it boots into Windows, but the second I try to launch a demanding game or a heavy stress test, the whole PC instantly shuts off.\r\n\r\nI have done a ton of hardware swapping to isolate the issue, and the results make absolutely no sense:\r\n\r\n\\-First, I thought it was my power supply acting up under load, so I swapped it out for a completely different PSU, but the exact same crashes kept happening.\r\n\r\n\\-Next, I took my CPU and Kingston RAM and tested them in a friend's motherboard. With both Kingston sticks plugged into his board, the PC refused to even turn on. It would only boot if I took one stick out.\r\n\r\n\\-Then, I tried a completely different CPU in my original Gigabyte motherboard using my Kingston RAM. The crashes under gaming loads still happened, and XMP still wouldn't turn on.\r\n\r\nHere is the absolute craziest part. Just to see what would happen, I took out one of my Kingston sticks and replaced it with a random 8GB stick I had lying around. For some insane reason, this completely mismatched Kingston + 8GB setup boots perfectly, enables XMP Profile 1 at 3200MHz with zero issues, and doesn't crash at all under heavy gaming loads.\r\n\r\nI am completely stumped. If my CPU memory controller or motherboard traces were physically fried by the power cut, how is a mismatched 16GB and 8GB setup running flawlessly at full 3200MHz XMP speed? But if it is just a single dead Kingston RAM stick, why did putting a completely different CPU into my motherboard still cause the system to crash under load?\r\n\r\nHas anyone ever experienced a power surge causing a weird double failure like this, or is there some bizarre hardware conflict I am overlooking? Any advice would be amazing.",
+      "gold": "Troubleshooting",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "New rx 9060 xt sapphire nitro + fan making a weird noise\r\n\r\nMy friend offered me an rx 9060 xt 16 go sapphire nitro + for my birthday everything worked flawlessy cause it's new gpu but about 20 days later the middle fan started to make a weird noise like the fan blades hitting something i removed it ( since it has the quick connect system ) and checked it and it was clean and nothing is blocking the blades so what's the origin of the noise and how to fix it since i can't send the gpu back thanks",
+      "gold": "Troubleshooting",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "Advice on part replacement for toasted pc or opt for new build\r\n\r\nBoth my x570 motherboard and 1660ti GPU got toasted when the 650w PSU fried recently. It's been 7 years since I owned this PC so I guess it has run it's course.\r\n\r\nCurrently have a Ryzen 3600, Corsair Vengeance DDR4 32GB (replaced from 1.5years back) and a Seasonic focus plus 850w gold that I newly bought hoping other parts didn't die but unfortunately not the case.\r\n\r\nIs it better to go for a AM4 as replacement for cheap and buy a 9070xt or splurge on a new build entirely on AM5?\r\n\r\nWas considering between getting a B550 motherboard and a 9070xt with new HDD for more storage. And possibly change up the motherboard and processor down the line to cut some costs at the moment but not sure if that will be the optimal move. \r\n\r\nAppreciate any advise and feedback on this, thanks!",
+      "gold": "Build Help",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "Is it worth upgrading from a 10850K?\r\n\r\nMy gf's build is basically: 10850k, rtx4060, 32gb ddr4-3200, 2TB MSI nvme, 750W seasonic prime.\r\n\r\nHer use case is mixed work/play. Job via 'Windows App' (so nearly zero local compute load). for gaming it's mostly MMO's, guild wars 2, ff, , BDO, a bit of the new warcraft, but also overwatch/marvel rivals, and occasionally new things as they come along (she's enjoying galactic racer with her brother since pod racer was a game they played growing up).\r\n\r\nGiven the market rn is burnt to a crisp cooked, I want to get an upgrade in via microcenter bundles before prices get higher and higher and higher over the next few years.\r\n\r\nI have choices down to: the 250K bundle, the 270K bundle, or the 5600X3D bundle and re-using ram (however, there is a preference to get new ram so the old ram can be used to build a gaming pc for the living room). The AMD DDR5 bundles at microcenter are either 16gb, or much more expensive than the intel bundles 32v32gb. I know the x3d benefits MMO's especially but it doesn't look like the 250K is far behind, and the better productivity on the Intel side is tempting her.",
+      "gold": "Build Help",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "first ever pc\r\n\r\nI am confused about where to start with making a gaming pc and i know its going to be expensive so i would like it to be around 2,000?\r\n\r\nHowever, I would like to play a range of old games and newer games, and i want it to run smoothly and look good - is it possible?",
+      "gold": "Build Help",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "Is this a good config for nowadays ?\r\n\r\n\\-8 GB NVIDIA GeForce RTX 3060 Ti \r\n\r\n\\-RAM 16 Go  \r\n\r\n\\-1,36 TB SSD \r\n\r\n\\-AMD Ryzen 5 5600 6-Core Processor",
+      "gold": "Discussion",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "First build advice on part list\r\n\r\nLooking at building my own pc for my first pc and have put together are parts list but don\u2019t have much experience and would like any help  https://au.pcpartpicker.com/list/YZbNGk",
+      "gold": "Discussion",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "Help! Is an RTX 3050 inno3D Twin x2 OC 6GB worth it for $118?\r\n\r\nI'm currently rocking an MSI GTX 1050 2GB since most of my use case aren't that demanding. I mostly use it for drawing and some older or less demanding titles, I don't game much - but ever since I played horizon zero dawn, I knew that I won't be able to run horizon forbidden west. I tried, and besides... I've had this gpu for almost 4 years! I think an upgrade is reasonable enough even though I keep hesitating. This was the closest thing I can find within my budget.  \r\n  \r\nHere's my current setup.\r\n\r\nMSI GTX 1050 OC 2GB  \r\nMSI B450M A PRO MAX  \r\nCoolMaster MWE v2 650  \r\nAMD Ryzen 5 1600x  \r\nDDR4 32GB RAM 2667 MHz (can't remember the brand)",
+      "gold": "Build Help",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "Intel i3 8100t + Intel arc a750\r\n\r\nIs this combination bad for 1080p editing and gaming? In a website it says cpu bottlenecks gpu by 15%. What should I do?",
+      "gold": "Discussion",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "Why does my SSD think that 3 MB/s is it's max read speed?\r\n\r\nI've had this SSD for a while, and it's been significantly underperforming since day 1. For the sake of example, its load times in games are slower than the HDD installed in the same system (we're talking 10 minutes to boot some games), and I regularly get interruptions in games, sometimes with messages saying things like \"The game has detected streaming delays. This may be caused by limited disk bandwidth or limited CPU resources.\"\r\n\r\nI've got a 9800x3d, so I'm gonna assume CPU isn't the issue.\r\n\r\nI checked the task manager while I was loading one of these games, and it was saying that disk read utilization was at 100%, but the rate was a steady \\~3MB/s...which is atrocious. There was no write activity going on, so it shouldn't be a mixed read/write situation.\r\n\r\nIt's on a 6GB/s SATA connector with an appropriate cable.\r\n\r\nAny ideas on why it would be so slow? The disk is a Teamgroup QX 4TB:\r\n\r\n[https://www.amazon.com/TEAMGROUP-Internal-1000TBW-Compatible-T253X7004T0C101/dp/B0C3M4TR4B?th=1](https://www.amazon.com/TEAMGROUP-Internal-1000TBW-Compatible-T253X7004T0C101/dp/B0C3M4TR4B?th=1)\r\n\r\nRest of the PC:\r\n\r\nCPU: Ryzen 7 9800x3d\r\n\r\nRAM: 48GB @ 6000\r\n\r\nBoot drive: Some crazy NVMe thing I don't have any problems with\r\n\r\nGPU: RTX 4070 Ti Super\r\n\r\nEverything else: Probably doesn't matter, let me know if more information is needed though",
+      "gold": "Troubleshooting",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "Thoughts on new build\r\n\r\n[PCPartPicker Part List](https://uk.pcpartpicker.com/list/4P4fxf)\r\n\r\nType|Item|Price\r\n\r\n:----|:----|:----\r\n\r\n**CPU** | [AMD Ryzen 7 9800X3D 4.7 GHz 8-Core Processor](https://uk.pcpartpicker.com/product/fPyH99/amd-ryzen-7-9800x3d-47-ghz-8-core-processor-100-1000001084wof) | \u00a3374.99 @ Amazon UK \r\n\r\n**CPU Cooler** | [Thermalright Phantom Spirit 120 SE 66.17 CFM CPU Cooler](https://uk.pcpartpicker.com/product/GpbRsY/thermalright-phantom-spirit-120-se-6617-cfm-cpu-cooler-ps120se) | \u00a332.90 @ Amazon UK \r\n\r\n**Motherboard** | [Gigabyte B850 AORUS ELITE WIFI7 ATX AM5 Motherboard](https://uk.pcpartpicker.com/product/72RnTW/gigabyte-b850-aorus-elite-wifi7-atx-am5-motherboard-b850-aorus-elite-wifi7) | \u00a3189.95 @ Amazon UK \r\n\r\n**Memory** | [Klevv BOLT V 32 GB (2 x 16 GB) DDR5-6000 CL28 Memory](https://uk.pcpartpicker.com/product/WCgZxr/klevv-bolt-v-32-gb-2-x-16-gb-ddr5-6000-cl28-memory-kd5agu880-60b280h) | \u00a3419.99 @ Overclockers.co.uk \r\n\r\n**Storage** | [Crucial P310 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://uk.pcpartpicker.com/product/hh4Zxr/crucial-p310-2-tb-m2-2280-pcie-40-x4-nvme-solid-state-drive-ct2000p310ssd8) | \u00a3209.99 @ Overclockers.co.uk  (OOS)\r\n\r\n**Video Card** | [Gigabyte EAGLE OC ICE SFF GeForce RTX 5070 Ti 16 GB Video Card](https://uk.pcpartpicker.com/product/H9JBD3/gigabyte-eagle-oc-ice-sff-geforce-rtx-5070-ti-16-gb-video-card-gv-n507teagleoc-ice-16gd) | \u00a31205.47 @ Scan \r\n\r\n**Case** | [Phanteks XT PRO ATX Mid Tower Case](https://uk.pcpartpicker.com/product/zJWJ7P/phanteks-xt-pro-atx-mid-tower-case-ph-xt523p1-bk01) | \u00a352.99 @ Overclockers.co.uk \r\n\r\n**Power Supply** | [MSI MAG A850GL PCIE5 850 W 80+ Gold Certified Fully Modular ATX Power Supply](https://uk.pcpartpicker.com/product/zF4Zxr/msi-mag-a850gl-pcie5-850-w-80-gold-certified-fully-modular-atx-power-supply-mag-a850gl-pcie5) | \u00a389.99 @ Amazon UK \r\n\r\n | *Prices include shipping, taxes, rebates, and discounts* |\r\n\r\n | **Total** **|** **\u00a32576.27**\r\n\r\n **| Generated by** [**PCPartPicker**](https://pcpartpicker.com) **2026-10-18 12:45 BST+0100 |**",
+      "gold": "Build Help",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "PC Not Booking After CPU Change",
+      "gold": "Troubleshooting",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "My Init Display First setting in bios is not saving (but everything else does)\r\n\r\nMy build is a:   \r\n**Motherboard:** Gigabyte GA-B75M-D3H, Rev. 1.0  \r\n**Motherboard chipset:** Intel B75  \r\n**GPU:** NVIDIA GeForce RTX 5050 (new, rip my $400)  \r\n**BIOS:** Updated from the original 2013 BIOS to F16f\r\n\r\nI have internal graphics luckily and for some reason my bios never shows nor do my monitors respond unless I go into BIOS Via my integrated graphics and change that one setting to \u201cPEG\u201d. \r\n\r\nThis is how it\u2019s always been and always has fixed it, but now this one setting gets reset after every restart and switches back to auto which in theory makes my motherboard not talk to my GPU.\r\n\r\nI changed a couple of harmless bios setting and restart and they all SAVE and persist across restarts but that one setting changes back to auto every time.   \r\nI think it\u2019s because it\u2019s because it doesn\u2019t detect a PEG supported GPU, but It\u2019s been fine and this process has been working for MONTHS. I did receive a notification about a windows update last night before turning off my pc (Windows 10, latest version) and when I first booted up my pc today using my internal graphics card, windows started \u201crepairing\u201d but then failed and reverted and now it boots like normal. \r\n\r\nI have no clue what\u2019s happening, but I love when things that don\u2019t correlate with each other suddenly break for no reason.  \r\nAny advice appreciated!!",
+      "gold": "Troubleshooting",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "Facing issue with NVMe SSD, being used with PCIe adapter\r\n\r\nAround 2 years back, in November 2024, I got myself an NVMe SSD (WD Blue SN580) without checking if my motherboard supports it. Since my motherboard didn't have an M2 port, and I didn't use any sort of Graphics card, I decided to get to use the PCIe x16 port along with the Adapter.\r\n\r\nhttps://www.amazon.in/gp/aw/d/B099RNMDR9?psc=1&ref=ppx\\_pop\\_mob\\_b\\_asin\\_title&th=1\r\n\r\nIt worked flawlessly for over a year and half, but since last 4-5 months, the PC doesn't boot properly. Sometimes it works, sometimes it opens BIOS and I don't see the SSD listed over there. After 2-3 tries, the SSD is detected and it boots into Windows. Sometimes while the Windows is running, it crashes and stops detecting the SSD.\r\n\r\nHas anyone faced this before? Is it something to do with loose connection between NVMe and PCIe? I have tried using eraser to rub on the connectors but it keeps on happening everytime.",
+      "gold": "Troubleshooting",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "Gtx1650 xeon e3 1230v2\r\n\r\nHi, I'm getting this setup the GTX is palit, can't do anything else, I'm wondering how it will do for games before 2020 or even up to 2026, will it be good for max fh5?",
+      "gold": "Discussion",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "Naming schemes\r\n\r\nHello everyone! \r\n\r\nSo after nearly a decade that I lost track of the market updates about CPU/GPU (Last gen I knew was Intel 8th/Ryzen 2nd/GTX 10xx, so 2017), I wanted to learn what the current market has to offer. And it is confusing as heck...\r\n\r\nIn the last years I have been buying used PC where I know the CPU/GPU differences, so I can choose whatever device is the best purchase. \r\n\r\nI also want to buy a new device soon but there are too many options out there (I live in Chile and while we are not that far behind, we still have \"new\" 10th gen PC in stores lol). \r\n\r\nI even saw a Ryzen 5 which initially I thought was like super fast and new (Since I often buy 6th gen PCs) but looked it up on the internet and it supposedly is a rebrand of older AMD CPU, and apparently the same happens with some Intel CPU.\r\n\r\nOne thing that blew my mind after researching (I know about both brands renaming to Core Ultra and AI Series) is that somehow AMD released these new AI series but the first generation of these was 200, and later the 100. like what the...\r\n\r\nI thought I would just buy a Mac and call it a day, but I also think I need a Windows PC and I dont know what would be similar to that, I'm currently not interested in gaming so portability and battery life would be main priorities, along a good perfomance. \r\n\r\nAny thoughts? thanks for reading\r\n\r\ntl;dr: I need a new Windows PC for work (Office, and occasional light dev and design), ideally similar to Macs, CPU brands naming schemes are confusing for this\r\n\r\n(I already asked for this in another subreddit but I also want a PC)",
+      "gold": "Discussion",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "What are some quality of life changes you make when you first set up your PC?\r\n\r\nI\u2019ve just built my first PC and curious what are some essentials you always make.",
+      "gold": "Discussion",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "PowerColor RX 9060 XT Reaper 16 GB or RX 6900 XT used?\r\n\r\nHi! i am going to upgrade my pc, and this are 2 of the gpus that im interested. I can buy one of this at almost the same price (im from argentina, prices are crazy here) so idk. Any suggetions are good for me. Thanks!",
+      "gold": "Discussion",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "Need honest help\r\n\r\n**Title: Competitive PS5 player looking to switch to PC. First build, $1,000\u2013$2,500 budget. Need advice.**  \r\nWhat\u2019s up everyone,  \r\nI\u2019ve been a console gamer for most of my life, mainly playing on PS5. I play most games competitively and have reached some of the highest ranks in several games I\u2019ve played.  \r\nLately, I\u2019ve been thinking it\u2019s time to make the switch to PC gaming.  \r\nI\u2019m also a college student, and I use my laptop for schoolwork and my job, so I figured investing in a good PC would make sense for both gaming and productivity.  \r\nThe thing is, I\u2019ve never owned or built a gaming PC before, so I\u2019m pretty new to all of this.  \r\nMy budget is around $1,000\u2013$2,000, but I\u2019m willing to stretch it to $2,500 if it\u2019s worth the extra money. I want something with great performance for competitive gaming, while also being able to handle schoolwork, multitasking, and work-related tasks.  \r\nI\u2019m also looking for something that\u2019ll last me a good few years without needing major upgrades.  \r\nI have a few questions:  \r\nWould you recommend building my first PC or buying a prebuilt?  \r\nIf I build it myself, what parts would you recommend for my budget?  \r\nWhat\u2019s the sweet spot for price and performance? Is spending $2,500 overkill for my needs?  \r\nWhat FPS should I realistically aim for in competitive games?  \r\nShould I wait until Black Friday or Cyber Monday to buy everything?  \r\nAre there any beginner mistakes or things I should know before switching from PS5 to PC?  \r\nI\u2019m not necessarily trying to spend my entire budget if I don\u2019t need to. I just want a solid PC with great performance and good longevity.  \r\nI\u2019d appreciate any recommendations, PCPartPicker lists, or advice from people who have made the switch from console to PC.  \r\nThanks in advance!",
+      "gold": "Build Help",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "B650 Gaming X AX V2 rev. 1.2 + 7800X3D, should I flash before a first boot?\r\n\r\nHi folks!\r\n\r\nI'm building my first PC and I've heard about the BIOS/voltage issues frying CPUs etc. Does this specific board and revision already come with the fix?  \r\n\r\nI haven't powered it on yet, so I don't know which BIOS it has. Is it okay to boot at stock settings with EXPO off and check the version, or should I flash it beforehand? Just don't want to fry my processor.\r\n\r\nApologies if the question has been asked before.",
+      "gold": "Build Help",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "Would now be a great time to sell my PC?\r\n\r\nHey y\u2019all, \r\n\r\nI currently have a PC fitted with a 5070, i7 12700f, ASUS ProArt B660, and 32GB DDR4 and I am thinking about selling each part separately. \r\n\r\nAt the moment, I am a full-time college student who lives on campus and I barely visit my house where my PC is setup. Therefore, I never get to play games until my semester ends. \r\n\r\nWould it be worth selling the parts as is right now?  \r\nI plan to build another PC in the near future but I\u2019m afraid the prices of PC parts in the future would cost even more which could lead to me not building the PC at all. Advice / suggestions are welcomed \ud83d\ude0a",
+      "gold": "Discussion",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "5800X3D + Corsair Nautilus 360 RS ARGB owners \u2014 what temps are you getting?\r\n\r\nHey guys, anyone here running this combo? I've been testing mine and would like to compare temperatures, especially at idle.\r\n\r\nMy setup:  \r\n\u2022 Ryzen 7 5800X3D  \r\n\u2022 Corsair Nautilus 360 RS ARGB  \r\n\u2022 ASUS Prime B450M-A, BIOS 4645  \r\n\u2022 32GB DDR4-3200 and an RTX 5070\r\n\r\nThe radiator is top-mounted as exhaust, with the pump below the radiator and no kinks in the tubes. Pump speed is around 3100 RPM. I'm using the Windows High Performance power plan with DOCP enabled. Curve Optimizer isn't available in my BIOS.\r\n\r\nHere are the CPU temperatures I've recorded:  \r\n\u2022 Idle: 46\u201348\u00b0C at 28\u00b0C room temperature, with CPU power around 28\u201334W  \r\n\u2022 Firefox open: 52\u201353\u00b0C  \r\n\u2022 Valorant: 60\u201366\u00b0C  \r\n\u2022 Valheim: 58\u201365\u00b0C  \r\n\u2022 Cyberpunk: 63\u201370\u00b0C  \r\n\u2022 Four Cinebench 2026 runs: 74.8\u201377.5\u00b0C CPU Package, at roughly 110\u2013114W\r\n\r\nI also tried AIDA64:  \r\n\u2022 CPU + cache: around 74\u00b0C  \r\n\u2022 CPU + FPU + cache: 83\u201384\u00b0C Package, with HTC/PROCHOT reported as \u201cNo\u201d during that test  \r\n\u2022 FPU only: reached 88.9\u00b0C Package and 91.3\u00b0C CCD\r\n\r\nThe 28\u00b0C room temperature was measured during the idle session, not throughout every test.\r\n\r\nIf you're using this CPU with the Nautilus or another 360mm AIO, how do these results compare with yours? I'm mainly wondering about the 46\u201348\u00b0C idle temperature. Please mention your room temperature, fan speeds and whether you're undervolting, if possible. Is there anything in the setup or mounting you'd check?",
+      "gold": "Troubleshooting",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "Is \u00a377 for 1TB of ssd a good deL?\r\n\r\nQuestion",
+      "gold": "Build Help",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "First time builder, any thing I should think about?\r\n\r\nFirst time builder, any tips or advise for this build i'm putting together:\r\n\r\n[https://uk.pcpartpicker.com/list/qDGZXf](https://uk.pcpartpicker.com/list/qDGZXf)",
+      "gold": "Build Help",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "Thinking of buying a used setup from a friend.\r\n\r\nI5 13400f\r\n\r\nAsus prime b760mk\r\n\r\n16gb 2\u00d78gb 4800mhz ddr5 ram\r\n\r\nGigabyte g24f2 165hz 1ms monitor\r\n\r\nRazer Deathadder essential mouse\r\n\r\nPhilco Gaming PKB92 full mechanical brown switches keyboard \r\n\r\nSapphire nitro plus rx6700xt\r\n\r\nId cooling zoomflow 240xt cooler liquid cooler \r\n\r\nGamemax fortress case\r\n\r\nXpg pylon 650w psu\r\n\r\n1tb nvme\r\n\r\nHyperX cloud stinger s 7.1 headset\r\n\r\nThis is the build, my friend has had it since December 2023, he bought everything new except for the GPU, everything on the build works perfectly fine except for the scroll wheel on the mouse. He got it for about 360k at the time which is $1300. I'm trying to get an estimate of how much this build is worth now? He bought it for gaming but it turns out gaming isn't for him and then only used it for browsing for like 85% of the time it was on and wants to sell it now. I've checked the temps using furmark and they stay at 71-73 degrees Celsius on 100% usage. Any idea about the price? I'm thinking of offering him 250k pkr which is around $900.",
+      "gold": "Discussion",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "High cpu usage in every game, low Gpu\r\n\r\nSpecs are RTX 4060, i5-12400f with 16b\r\n\r\nEvery game I'm playing is reaching over 90% cpu usage (single core sometime reaches up to 150%) steam performance overlay shows this and the majority of the time its at 100% cpu.\r\n\r\nGpu percentage is low never over 60% and consistently around 20-40%\r\n\r\ntemps are fine, Cpu temp consistently 65 to 80 temp, gpu temp 50\r\n\r\nno fps drops at all or stuttering.\r\n\r\nIs this good or bad?",
+      "gold": "Troubleshooting",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "First-time builder desperate for help. I hope I dnt have to replace my motherboard:( Forced my front panel cables and now motherboard won't even power on with the screwdriver trick\r\n\r\nHey everyone,  \r\nIk it\u2019s a long read but pls help me if u can! X\r\n\r\nI am completely new to this and working on my first-ever PC build, so I have zero prior experience. I am using a Gigabyte AORUS B650 Elite AX motherboard inside a HYTE Y70 case, and I\u2019ve run into a massive problem. I\u2019m incredibly stressed and really need some advice on whether this is salvageable or if I've completely ruined my components.\r\n\r\nHere is what happened:  \r\nThe Initial Test: Before installing my GPU, I tested the system using the screwdriver trick across the front panel pins. Everything worked perfectly and the motherboard turned on flawlessly.\r\n\r\nThe Front Panel Mistake: When I went to plug in the unified F-Panel cable block that comes with the HYTE Y70 case, I couldn't get it to slide onto the motherboard pins properly. I got frustrated and was a bit too forceful trying to push it down. It would half go down but would not fully align or click in.\r\n\r\nThe Current State: Now, the cable won't fit, and worse, the PC is completely dead. I pulled the cable off, but now the motherboard won't even turn on using the screwdriver trick anymore like it did at first. No lights, no fans, nothing.\r\n\r\nThe USB 3.0 Header: same problem here too \u2014 While struggling with the wiring, I also severely bent and flattened the pins inside the USB 3.0 header slot.. pins inside that plastic box are totally mashed up.\r\n\r\nDid forcing that front panel cable trigger some kind of short-circuit protection on the B650 Elite AX? Is there a way to reset the motherboard to at least get the screwdriver trick working again, or did I short out and permanently kill the whole board?  \r\nIf the board is still alive, what are my options for bypassing these damaged headers since the pins are in bad shape?  \r\nAny help, troubleshooting steps, or reassurance would be massively appreciated. Thank you so much!\r\n\r\nPhotos attached pls view ty.\r\n\r\nhttps://ibb.co/pvWPtwhX  \r\nhttps://ibb.co/4wKXv2Xp  \r\nhttps://ibb.co/tMGMDTtJ  \r\nhttps://ibb.co/Gf314JWx  \r\nhttps://ibb.co/JjCBCRyK",
+      "gold": "Troubleshooting",
+      "predicted": "Troubleshooting"
+    },
+    {
+      "text": "Older, larger PC cases. Modify? Sell? Toss?\r\n\r\nHi. I have some older, larger PC cases. Cooler Master HAF-X's and Storm Strykers.\r\n\r\nWondering if it's worth re-using these and fixing them up or reselling. One of the HAF-X's powder coating/paint is absolutely fine. Another has a half-ass spraypaint job.\r\n\r\nThe Storm Strykers are all in great condition with a glossy white/black finish.\r\n\r\nI'm looking at them and the HAF-X's can fit some serious fans (perhaps I can retrofit some of the Mighty 220m fans from the HAF 2 500?). Well, both can fit quite a bit of hardware. I'm not interested in liquid cooling.\r\n\r\nI have powder-coating shops nearby. I can attempt DIY but the HAF-X has a lot of little grooves and what not on the front panel and it would be a lot of effort.\r\n\r\nI have an air compressor. I could potentially purchase a cheap sandblaster or something and give it a shot but then I'd have to worry about buying medium, then spraypainting, etc.\r\n\r\nI just wanted to reach out to the Reddit hivemind and see what's up.\r\n\r\nWe were going to have a garage sale and I figured if these thoughts didn't materialize I'd just attempt to sell them there as they are just too large to ship to anyone. I'd have to source a box, etc. and nobody is going to be willing to pay for shipping on one of these, especially with increased costs these days.\r\n\r\nThanks.",
+      "gold": "Discussion",
+      "predicted": "Build Help"
+    },
+    {
+      "text": "Budget Gaming PC Build Help\r\n\r\nTrying to build a budget gaming tower for a friend in the US and can't decide where the money is better spent. Trying to keep it under $1,000. I've talked myself in circles trying to decide on AM4 vs AM5, too.\r\n\r\nHis kid wants to use it for primarily indie gaming but able to support more recent titles on mid level settings. AM4 probably allows me to give him a better GPU and more memory (32 DDR4 vs 16 DDR5) compared to AM5, but slower memory and less of an upgrade path. With this being his kids first gaming PC, I want him to have scalability but also want it to be as good as possible.\r\n\r\nI was looking at the AMD Ryzen 5 7600 Raphael AM5 paired with the Radeon RX 7600, 1TB SSD, and 16GB RAM before I kept blowing the budget. I've already pushed the budget to $1k by throwing in some of my own money for his son's birthday.\r\n\r\nI've been out of the PC building game for quite some time, so looking for some opinions.",
+      "gold": "Build Help",
+      "predicted": "Troubleshooting"
+    }
+  ]
+}

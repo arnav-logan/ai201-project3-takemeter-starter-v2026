@@ -257,18 +257,17 @@ Yes, I used AI to prelabel and I corrected any incorrect labels.
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.500 | 0.433 | -0.067 |
+| Macro F1 | 0.405 | 0.349 | -0.055 |
+| F1 — `Build Help` | 0.519 | 0.541 | +0.022 |
+| F1 — `Discussion` | 0.000 | 0.308 | +0.308 |
+| F1 — `Troubleshooting` | 0.696 | 0.200 | -0.496 |
 
 **What I predicted before I looked:**
-<!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
-     prediction made afterwards isn't one. -->
+I predict that that the trained model will have higher accuracy for all three labels (`Build help`, `Discussion`, `Troubleshooting`).
 
 **What the gap actually means:**
-<!-- If the baseline matched your trained model, your fine-tuning added
-     nothing — and that is a real finding, not a failure. Say it plainly. -->
+Suprisingly, the trained model had worse accuracy and F1 scores compared to the baseline. Looking at the labels, the trained model was slightly better at `Build Help` (only a 2% increase) and significantly better at `Discussion` (~30% increase). However, the trained model performed much worse at `Troubleshooting` (~50% decrease). This is likely due to mislabeled training data. 
 
 
 
