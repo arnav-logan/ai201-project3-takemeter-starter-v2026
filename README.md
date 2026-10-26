@@ -351,7 +351,7 @@ The largest confusions were: 8 real `Discussion` posts called `Build Help` and 8
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 28 / 30 = 93%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -375,24 +375,32 @@ The largest confusions were: 8 real `Discussion` posts called `Build Help` and 8
 
 **1.**
 > *The post:*
->
-> *Staff said / I said:*
->
+> Ran the same loop in 4C and in 24C within a fortnight, same effort by heart rate. 90 seconds slower in the heat over six miles. People keep saying heat costs you 'a bit' and it's more than that.
+
+>*Staff said / I said:*
+> analysis / reaction
+
 > *My call, and why:*
->
+> I labeled this post as `reaction` and not `analysis` because I beleived that the personal experience of the post led to more of a reaction than analysis.
+
 > *Which pile:*
+> (c)
 
 **2.**
 > *The post:*
->
+> Went back through the club results going back to 2012. Every single year the number of people who enter the spring marathon and don't start it sits between 18 and 23 percent. It's not a bad-luck year, it's the base rate.
+
 > *Staff said / I said:*
->
+> analysis / reaction
+
 > *My call, and why:*
->
+> I labeled this post as `reaction` over `analysis` because I generally applied the rule of "post's reaction over evidence" even though the evidence is sufficient to prove the arguement.
+
 > *Which pile:*
+> (a)
 
 **What the pattern in my disagreements tells me:**
-
+I didn't have many disagreements, but for the ones I did have the pattern reveals that I tend to classify evidence-backed arguments (that have some emotion) as reaction posts. 
 
 
 ---
