@@ -410,24 +410,26 @@ I didn't have many disagreements, but for the ones I did have the pattern reveal
 ## The Improvement
 
 **What I changed:**
+I relabeled some posts to better match boundaries between `Build Help` and `Discussion` because I noticed a lost of posts that asked for help about pc parts but were labeled `Discussion`.
 
 **Which diagnosis pointed at it:**
+I noticed that the precisions for `Discussion` were exceptionally low (even 0%) accross the three seeds, so maybe the model was getting confused `Discussion` and `Build Help`. 
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Per-label accuracy  | >80% | 0.433 | 0.433 | 0.633 | FAIL |
+| 2. Accuracy difference between labels | <=20% | 0.433 | 0.433 | 0.633 | PASS |
+| 3. No label should comprise majority of training data | <60% | 11,10,9 | 11,10,9 | 11,10,9 | PASS |
+| 4. `Build Help` precision | >70% | 0.384 | 0.392 | 0.526 | FAIL |
+| 5. `Troubleshooting` recall | >70% | 0.111 | 0.222 | 0.777 | FAIL |
 
 **Did it help, and how do I know:**
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->
-
+The changes did not make a very significant difference. It seems there was only some variation in F1 scores and `Build Help` precision went up for one seed. All the criteria that were failing before continue to fail.
 
 
 ---
@@ -435,13 +437,15 @@ I didn't have many disagreements, but for the ones I did have the pattern reveal
 ## What's Still Broken
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
-
+Criterion 1: the per-label accuracy still does not meet the target; maybe have better labeled data or even use different labels that are clearer as there is a fair amount of overlap between the labels themselves.
+Criterion 4: the `Build Help` precision is still too low; there needs to be clearer definitions and boundaries and better labeled data to improve this.
+Criterion 5: the `Troubleshooting` recall is still to low; maybe increase the label's portion in the training data so the model tries looking for it more often.
 
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
 <!-- Two sentences. Your confusion matrix is the evidence. -->
-
+The model seemed to learn that `Build Help` is generally applicable to most posts even though I intended for the label to only be applied to posts asking about parts for a specific build. As such, the model saw overlap between `Buid Help` and the other two labels even though I beleived that there were clear boundaries (`Discussion` is about more general topics and `Troubleshooting` is about a specific and recent problem).
 
 
 <!-- ═════════════════════════════════════════════════════════════════════
