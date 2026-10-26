@@ -88,26 +88,26 @@ The system will simply learn to always guess a certain label if it appears too o
 ---
 
 ## 4. If posts are re-labeled by someone else or AI, labels should agree 90% of the time
-
+## Revised: 4. `Build Help` should have a precision of at least 70%
 <!-- Your criterion. -->
 
 
 
 **Why this target:**
 The labels should not be ambiguous most of the time so the consistency will likely be good. However, there can often be posts that follow the criteria of multiple labels so some labeling may differ.
-
+Revised: Previous criteria was unable to be tested across different seeds.
 
 ---
 
 ## 5. For posts that are on the boundary of two different labels, the tiebreaker should follow the decision rule 90% of the time.
-
+## Revised: 5. `Troubleshooting` should have a recall of at least 70%
 <!-- Your criterion. -->
 
 
 
 **Why this target:**
 For posts that are close, the system needs to follow the decision rule exclusively. However, there may be a few times where the rule can't be applied (such as if a post only follows part of a rule requirement) so the system will have to decide another way in those times.
-
+Revised: Previous criteria was unable to be tested across different seeds.
 
 ---
 

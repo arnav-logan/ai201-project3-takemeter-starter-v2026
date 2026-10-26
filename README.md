@@ -281,10 +281,10 @@ Suprisingly, the trained model had worse accuracy and F1 scores compared to the 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
 | 1. Per-label accuracy  | >80% | 0.433 | 0.433 | 0.633 | FAIL |
-| 2. Accuracy difference between labels | <20% | 0.433 | 0.433 | 0.633 | PASS |
+| 2. Accuracy difference between labels | <=20% | 0.433 | 0.433 | 0.633 | PASS |
 | 3. No label should comprise majority of training data | <60% | 11,10,9 | 11,10,9 | 11,10,9 | PASS |
-| 4. Re-labeled posts should agree | 90% | n/a | n/a | n/a | PASS |
-| 5. Uncertain classifications should follow decision rule | 90% | 0.5 | 0.5 | 0.5 | FAIL |
+| 4. `Build Help` precision | >70% | 0.384 | 0.392 | 0.562 | FAIL |
+| 5. `Troubleshooting` recall | >70% | 0.111 | 0.222 | 0.777 | FAIL |
 
 | Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
 |---|---|---|---|---|
@@ -320,13 +320,13 @@ The largest confusions were: 8 real `Discussion` posts called `Build Help` and 8
 <!-- MET or MISSED against LAST UNIT's target. The target has to hold across
      all three seeds, not turn up sometimes. -->
 
-| # | Criterion | Target | Verdict | How I decided |
+| Criterion | Target | Score | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1. Per-label accuracy | >80% | 0.433 | MISSED | All scores are below the target of 0.8 (0.433 and 0.633) |
+| 2. Accuracy difference between labels | <=20% | 20% | MET | Largest accuracy difference between labels is exactly 20% |
+| 3. No label should comprise majority of training data | <60%  | 0.36 | MET | A label composes at most 36% of training data |
+| 4. `Build Help` precision | >70% | 0.384 | MISSED | All `Build Help` precisions are below the target |
+| 5. `Troubleshooting` recall | >70% | 0.111 | MISSED | Although one seed has a `Troubleshooting` recall of 77%, the other two seeds fall below the target |
 
 **Diagnoses**
 
@@ -339,7 +339,9 @@ The largest confusions were: 8 real `Discussion` posts called `Build Help` and 8
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
 
-
+Criterion 1 was likely missed due incorrect labeling and `Build Help` having overlap with the other labels. This caused the per-label accuracy to be quite low.
+Criterion 3 was likely missed because the model learned to guess `Build Help` most of the time (see confusion matrix). However, this was not because of skewed data as the training data was balanced for each label.
+Criterion 5 was likely missed because the model was confused on the boundary between `Build Help` and `Troubleshooting`. It seems that only posts that explicitly listed an immediate problem were recognized as `Troubleshooting` which explains the low recall. 
 
 ---
 
