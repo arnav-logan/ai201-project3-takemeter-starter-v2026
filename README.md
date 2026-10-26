@@ -280,28 +280,37 @@ Suprisingly, the trained model had worse accuracy and F1 scores compared to the 
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Per-label accuracy  | >80% | 0.433 | 0.433 | 0.633 | FAIL |
+| 2. Accuracy difference between labels | <20% | 0.433 | 0.433 | 0.633 | PASS |
+| 3. No label should comprise majority of training data | <60% | 11,10,9 | 11,10,9 | 11,10,9 | PASS |
+| 4. Re-labeled posts should agree | 90% | n/a | n/a | n/a | PASS |
+| 5. Uncertain classifications should follow decision rule | 90% | 0.5 | 0.5 | 0.5 | FAIL |
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.433 | 0.433 | 0.633 | 0.200 |
+| Macro F1 | 0.349 | 0.309 | 0.599 | 0.290 |
+| F1 — `Build Help` | 0.541 | 0.564 | 0.667 | 0.126 |
+| F1 — `Discussion` | 0.308 | 0.000 | 0.308 | 0.308 |
+| F1 — `Troubleshooting` | 0.200 | 0.364 | 0.824 | 0.624 |
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+| true \ predicted | Build Help | Discussion | Troubleshooting |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **Build Help** | 10 | 1 | 0 |
+| **Discussion** | 8 | 2 | 0 |
+| **Troubleshooting** | 8 | 0 | 1 |
+
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
-
+The largest confusions were: 8 real `Discussion` posts called `Build Help` and 8 `Troubleshooting` posts labeled as `Build Help`. Because most of the misses were labeled as `Build Help`, the model likely learned a very loose definition of `Build Help` and applied it to most of the posts it saw.
 
 
 ---
